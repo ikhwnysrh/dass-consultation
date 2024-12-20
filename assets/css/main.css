@@ -1,0 +1,375 @@
+:root{
+    --primarycolor : rgb(0, 149, 255);
+    --primarycolorDark : rgb(0, 102, 255);
+}
+/* GANTI SCROLL */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primarycolor);
+    border-radius: 10px;
+    height: 24px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--primarycolorDark);
+}
+  *{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }  
+@font-face {
+    font-family: 'kayak';
+    src: url('Kayak Sans Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    min-width: 100%;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Kayak Sans Regular';
+    overflow: auto;
+    overflow-x: hidden;
+}
+section{
+    min-height: 100vh;
+    height:100%;
+    overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+    #content2{
+        min-height: 100%;
+    }
+    #home{
+        height:100% !important;
+        overflow: visible;
+    }
+    .mt-5{
+        margin-top: 1rem !important;
+    }
+    .display-4{
+        font-size: 2.5rem !important;
+    }
+    .btngroup button:first-child{
+        margin-right: 0px !important;
+    }
+    #content1{
+        border-bottom-left-radius: 25px !important;
+        border-bottom-right-radius: 25px !important;
+    }
+    .type{
+        font-size:16px;
+    }
+    h4{
+        font-size: 18px;
+    }
+}
+.navbar{
+    width: 90%;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 2rem 0rem 2rem;
+    border-bottom: solid 1px var(--primarycolor);
+}
+#home{
+    height:124vh;
+}
+.light{
+    font-family: 'Kayak Sans Light';
+}
+.display-1,.display-2,.display-3,.display-4{
+    font-family: Gilroy Heavy;
+    letter-spacing: -2px;
+}
+.bg-transparent{
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.dropdown-menu{
+    border: solid 1px var(--primarycolor);
+    border-radius:20px;
+}
+.dropdown-item:hover{
+    border-radius:20px;
+}
+.dropdown-item:active{
+    border-radius:20px;
+    color:white;
+    background-color: var(--primarycolor);
+}
+.navbar-brand{
+    /* margin-right:42px; */
+    font-size: 38px;
+}
+.nav-item{
+    transition: 0.3s ease;
+    padding: 0px 8px;
+    margin: 0px 8px;
+    font-size: 20px;
+    border: solid 1px rgba(255, 255, 255, 0);
+    border-radius: 0px;
+}
+.nav-item:hover{
+    transition: 0.3s ease;
+    border-radius: 20px;
+    border: solid 1px var(--primarycolor);
+}
+.btn-outline-success{
+    color:black;
+    border-color: var(--primarycolor);
+}
+.btn-outline-success:hover, .btn-outline-success:active{
+    border-color: var(--primarycolor);
+    background-color: var(--primarycolor);
+}
+.btn-success{
+    border-color: var(--primarycolor);
+    background-color: var(--primarycolor);
+}
+.btn-success:hover, .btn-success:active{
+    border-color: var(--primarycolor);
+    background-color: var(--primarycolorDark);
+}
+.searchbar{
+    transition: 1s ease;
+    width: 210px !important;
+}
+/* .searchbar:focus{
+    transition: 1s ease;
+    width: 220px !important;
+} */
+.p-10{
+    padding: 5rem 5rem 5rem 5rem;
+}
+.parallax-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/assets/img/parallax.png);
+    border-image: fill 0 linear-gradient(#0001, #00aaffc5);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: all 0.2s;
+}
+/* From Uiverse.io by vikiWayne */ 
+.button-parallax {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(0, 102, 255);
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid rgb(0, 102, 255);
+  }
+  
+  .button-parallax:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid rgb(0, 102, 255);
+    box-shadow: 4px 5px 17px -4px rgb(0, 102, 255);
+  }
+  
+  .button-parallax::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(0, 102, 255);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .button-parallax:hover::before {
+    width: 250%;
+  }
+  
+.scene-parallax{
+    transform: translate(var(--translateX), var(--translateY));
+	will-change: transform;
+}
+.parallax img{
+    position: absolute;
+}
+.parallax img:nth-child(1){
+    z-index: -1;
+    bottom: -40%;
+}
+.parallax img:nth-child(2){
+    z-index: -2;
+    bottom: -40%;
+}
+.parallax img:nth-child(3){
+    z-index: -3;
+    bottom: -40%;
+}
+.parallax img:nth-child(4){
+    z-index: -3;
+    bottom: 40%;
+    animation: cloud 2s infinite alternate;
+    animation-timing-function: ease-in-out;
+}
+.parallax img:nth-child(5){
+    z-index: 0;
+    bottom: -40%;
+}
+@keyframes cloud{
+    from {margin-left:-50px}
+    to {margin-left: 50px}
+}
+.pep{
+    position: absolute;
+    z-index: -1;
+    width:50%;
+    right: 2%;
+    bottom: -40%;
+}
+.mw-110{
+    min-width:100%;
+    max-width: 110%;
+}
+.jumbo{
+    position: absolute;
+    border: solid 1px var(--primarycolor);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 20px;
+    z-index: 2 !important;
+}
+.bg-fluid{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 0rem;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+}
+.jumbo2{
+    border: solid 1px var(--primarycolor);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 20px;
+}
+.fluid{
+    position: absolute;
+    max-width:150%;
+    right:-10%;
+}
+.jumbo div, .jumbo2 div{
+    text-align:right;
+}
+.btngroup button:first-child{
+    margin-right: 8px;
+}
+.btngroup2 button{
+    margin-right: 8px;
+    border-radius: 50px;
+}
+.btn{
+    border-radius: 20px;
+}
+#content1{
+    background: rgb(52,116,49);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.mt-10{
+    margin-top: 8rem !important;
+}
+.gsearch{
+    padding: 6px;
+    border: solid 1px var(--primarycolor);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 100px;
+}
+.txt i{
+    padding: 8px 0px 2px 12px;
+    margin-right: 16px;
+}
+.media-body span{
+    color: var(--primarycolor);
+}
+.container2{
+    overflow: scroll;
+    display: block;
+    max-height: 55vh;
+}
+.padded{
+    margin: 0 auto;
+    width: 75%;
+}
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+.card{
+    transition: 0.4s ease;
+    margin-top: 0px;
+    border: solid 1px var(--primarycolor);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.card:hover{
+    margin-top: 20px;
+    transition: 0.4s ease;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.233);
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.card img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.card-footer{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+.pep2{
+    margin-top:auto;
+    bottom:0px;
+    right:0;
+    max-width:75% !important;
+}
+#content4{
+    position: relative;
+}
+footer{
+    background: black;
+    min-height: 140px;
+}
+.navbar2{
+    background:black !important;
+}
+.dropdown-menu.b{
+    border: solid 1px var(--primarycolor);
+    border-radius:20px;
+    background-color: black;
+    color:white;
+}
+.b{
+    color:white;
+}
+.dropdown-item.b:hover{
+    border-radius:20px;
+}
+.dropdown-item.b:active{
+    border-radius:20px;
+    color:white;
+    background-color: var(--primarycolor);
+}

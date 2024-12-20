@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Penilaian DASS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #a3c7e5, #1a73e8);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .result-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a73e8;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .score {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .advice {
+            font-size: 16px;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f1f9ff;
+            border-radius: 8px;
+            border-left: 5px solid #1a73e8;
+        }
+
+        .advice h3 {
+            font-size: 18px;
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+
+        .advice p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1a73e8;
+            color: #f1f9ff;
+        }
+        /* Responsive design adjustments */
+        @media screen and (max-width: 768px) {
+            table, th, td {
+                font-size: 14px; /* Make table text smaller for mobile */
+                padding: 6px; /* Adjust padding for better table fit */
+            }
+        }
+
+        /* Further responsiveness for very small screens */
+        @media screen and (max-width: 480px) {
+            table, th, td {
+                font-size: 12px; /* Table text size for small screens */
+                padding: 5px; /* Minimal padding for small screens */
+            }
+        }
+          /* From Uiverse.io by xopc333 */
+          .button {
+            display: block;
+            position: relative;
+            width: 56px;
+            height: 56px;
+            margin: 0;
+            overflow: hidden;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            border: 0;
+        }
+
+        .button:before,
+        .button:after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            inset: 7px;
+        }
+
+        .button:before {
+            border: 4px solid #1a73e8;
+            transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+                transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+        }
+
+        .button:after {
+            border: 4px solid #1a73e8;
+            transform: scale(1.3);
+            transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            opacity: 0;
+        }
+
+        .button:hover:before,
+        .button:focus:before {
+            opacity: 0;
+            transform: scale(0.7);
+            transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .button:hover:after,
+        .button:focus:after {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+                transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+        }
+
+        .button-box {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .button-elem {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 17px 18px 0 18px;
+            transform: rotate(180deg);
+            fill: #1a73e8;
+        }
+
+        .button:hover .button-box,
+        .button:focus .button-box {
+            transition: 0.4s;
+            transform: translateX(-56px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="result-container">
+        <a href="konsultasi.html">
+            <button class="button">
+                <div class="button-box">
+                    <span class="button-elem">
+                        <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="button-elem">
+                        <svg viewBox="0 0 46 40">
+                            <path
+                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+            </button>
+        </a>
+        <h2>Hasil Penilaian DASS</h2>
+        <div id="loading">
+            <p>Loading...</p>
+        </div>
+        <div id="result">
+            <!-- Hasil DASS akan muncul di sini -->
+        </div>
+        <div id="advice" class="advice">
+            <!-- Saran dan edukasi akan muncul di sini -->
+        </div>
+
+        <!-- Indikator Penilaian -->
+        <h3>Indikator Penilaian</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tingkat</th>
+                    <th>Depresi</th>
+                    <th>Kecemasan</th>
+                    <th>Stress</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>0 - 9</td>
+                    <td>0 - 7</td>
+                    <td>0 - 14</td>
+                </tr>
+                <tr>
+                    <td>Ringan</td>
+                    <td>10 - 13</td>
+                    <td>8 - 9</td>
+                    <td>15 - 18</td>
+                </tr>
+                <tr>
+                    <td>Sedang</td>
+                    <td>14 - 20</td>
+                    <td>10 - 14</td>
+                    <td>19 - 25</td>
+                </tr>
+                <tr>
+                    <td>Berat</td>
+                    <td>21 - 27</td>
+                    <td>15 - 19</td>
+                    <td>26 - 33</td>
+                </tr>
+                <tr>
+                    <td>Sangat Berat</td>
+                    <td>> 28</td>
+                    <td>> 20</td>
+                    <td>> 34</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const resultDiv = document.getElementById('result');
+            const adviceDiv = document.getElementById('advice');
+            const loadingDiv = document.getElementById('loading');
+    
+            // Retrieve the stored results from localStorage
+            const result = JSON.parse(localStorage.getItem('result'));
+            if (result) {
+                const { depressionScore, anxietyScore, stressScore } = result;
+    
+                // Simulate delay before showing result
+                setTimeout(() => {
+                    loadingDiv.style.display = 'none'; // Hide the loading spinner
+    
+                    // Get categories based on scores
+                    const depressionCategory = getCategory(depressionScore, "Depresi");
+                    const anxietyCategory = getCategory(anxietyScore, "Kecemasan");
+                    const stressCategory = getCategory(stressScore, "Stres");
+    
+                    // Display results with categories
+                    resultDiv.innerHTML = `
+                        <p><strong>Depresi:</strong> ${depressionScore} (${depressionCategory})</p>
+                        <p><strong>Kecemasan:</strong> ${anxietyScore} (${anxietyCategory})</p>
+                        <p><strong>Stres:</strong> ${stressScore} (${stressCategory})</p>
+                    `;
+    
+                    // Generate advice based on scores
+                    let advice = '';
+    
+                    // Advice for Depression
+                    advice += `
+                        <h3>Depresi</h3>
+                        <p>${getAdvice(depressionCategory, "Depresi")}</p>
+                    `;
+    
+                    // Advice for Anxiety
+                    advice += `
+                        <br>
+                        <h3>Kecemasan</h3>
+                        <p>${getAdvice(anxietyCategory, "Kecemasan")}</p>
+                    `;
+    
+                    // Advice for Stress
+                    advice += `
+                        <br>
+                        <h3>Stres</h3>
+                        <p>${getAdvice(stressCategory, "Stres")}</p>
+                    `;
+    
+                    adviceDiv.innerHTML = advice;
+                }, 1500); // Simulate a 1.5 second delay
+            }
+        };
+    
+        // Function to categorize the score
+        const getCategory = (score, type) => {
+            if (type === "Depresi") {
+                if (score <= 9) return "Normal";
+                else if (score <= 13) return "Ringan";
+                else if (score <= 20) return "Sedang";
+                else if (score <= 27) return "Berat";
+                else return "Sangat Berat";
+            } else if (type === "Kecemasan") {
+                if (score <= 7) return "Normal";
+                else if (score <= 9) return "Ringan";
+                else if (score <= 14) return "Sedang";
+                else if (score <= 19) return "Berat";
+                else return "Sangat Berat";
+            } else if (type === "Stres") {
+                if (score <= 14) return "Normal";
+                else if (score <= 18) return "Ringan";
+                else if (score <= 25) return "Sedang";
+                else if (score <= 33) return "Berat";
+                else return "Sangat Berat";
+            }
+        };
+    
+        // Function to get the advice based on category and type
+        const getAdvice = (category, type) => {
+            if (category === "Normal") {
+                return `Kondisi Anda pada aspek ${type} tergolong normal. Tetap jaga kesehatan mental dengan pola hidup sehat dan aktivitas yang menyenangkan.`;
+            } else if (category === "Ringan") {
+                return `Kondisi Anda pada aspek ${type} tergolong ringan. Disarankan untuk lebih memperhatikan kesehatan mental, seperti berbicara dengan teman atau melakukan aktivitas relaksasi.`;
+            } else if (category === "Sedang") {
+                return `Kondisi Anda pada aspek ${type} tergolong sedang. Pertimbangkan untuk berkonsultasi dengan tenaga profesional untuk mendapatkan dukungan lebih lanjut.`;
+            } else if (category === "Berat") {
+                return `Kondisi Anda pada aspek ${type} tergolong berat. Sangat disarankan untuk segera berkonsultasi dengan psikolog atau psikiater untuk mendapatkan penanganan yang tepat.`;
+            } else {
+                return `Kondisi Anda pada aspek ${type} tergolong sangat berat. Segera cari bantuan profesional untuk mendukung pemulihan Anda.`;
+            }
+        };
+    </script>
+
+</body>
+</html>
