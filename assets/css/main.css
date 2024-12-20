@@ -150,6 +150,7 @@ section{
 }
 .parallax-image {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -169,7 +170,7 @@ section{
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    color: rgb(0, 102, 255);
+    color: black;
     transition: all 1000ms;
     font-size: 15px;
     position: relative;
