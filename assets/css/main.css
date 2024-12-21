@@ -46,10 +46,10 @@ section{
     #content2{
         min-height: 100%;
     }
-    /* #home{
-        height:100% !important;
+    #home{
+        height:90vh !important;
         overflow: visible;
-    } */
+    }
     .mt-5{
         margin-top: 1rem !important;
     }
