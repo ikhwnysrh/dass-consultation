@@ -80,7 +80,7 @@ section{
     border-bottom: solid 1px var(--primarycolor);
 }
 #home{
-    height: 90vh;
+    height:124vh;
 }
 .light{
     font-family: 'Kayak Sans Light';
