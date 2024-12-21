@@ -374,3 +374,46 @@ footer{
     color:white;
     background-color: var(--primarycolor);
 }
+
+.card{
+    padding: 1.25rem;
+}
+.card:hover{
+    -webkit-transform: translateY(-0.625rem);
+    transform: translateY(-0.625rem);
+}
+.team-img{
+    margin: 0 auto;
+}
+.team-img img{
+    width: 100%;
+}
+
+.team-info .social-network{
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: .625rem 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-info .social-network a{
+    display: block;
+    /* width: 1.5625rem; */
+    height: 1.5625rem;
+    line-height: 1.5625rem;
+    border-radius: .3125rem;
+    margin: 0 .3125rem;
+    font-size: .75rem;
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.team-info .social-network a:hover{
+    background-color: var(--secondary-color);
+}
+h3{
+    color: var(--text-black);
+}
