@@ -38,7 +38,7 @@ body{
     overflow-x: hidden;
 }
 section{
-    min-height: 100vh;
+    min-height: 100%;
     height:100%;
     overflow: hidden;
 }
@@ -46,10 +46,10 @@ section{
     #content2{
         min-height: 100%;
     }
-    #home{
+    /* #home{
         height:100% !important;
         overflow: visible;
-    }
+    } */
     .mt-5{
         margin-top: 1rem !important;
     }
@@ -80,7 +80,7 @@ section{
     border-bottom: solid 1px var(--primarycolor);
 }
 #home{
-    height:124vh;
+    height: 90vh;
 }
 .light{
     font-family: 'Kayak Sans Light';
