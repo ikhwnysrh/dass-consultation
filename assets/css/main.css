@@ -1,6 +1,6 @@
 :root{
-    --primarycolor : rgb(0, 149, 255);
-    --primarycolorDark : rgb(0, 102, 255);
+    --primarycolor : #1a73e8;
+    --primarycolorDark : rgb(1, 77, 191);
 }
 /* GANTI SCROLL */
 ::-webkit-scrollbar {
