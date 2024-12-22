@@ -382,7 +382,7 @@ footer{
 }
 
 .card{
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
 }
 .card:hover{
     -webkit-transform: translateY(-0.625rem);
@@ -410,7 +410,7 @@ footer{
     height: 1.5625rem;
     line-height: 1.5625rem;
     border-radius: .3125rem;
-    margin: 0 .3125rem;
+    margin: 0 .1125rem;
     font-size: .75rem;
     background-color: var(--bg-dark);
     color: var(--text-white);
