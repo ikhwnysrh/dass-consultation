@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Kesehatan Mental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0066cc;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .source {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .source a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .source a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: block;
+            position: relative;
+            width: 56px;
+            height: 56px;
+            margin: 0;
+            overflow: hidden;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            border: 0;
+            -right: 80px;
+        }
+
+        .button:before,
+        .button:after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            inset: 7px;
+        }
+
+        .button:before {
+            /* border: 4px solid #1a73e8; */
+            transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+                transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+        }
+
+        .button:after {
+            border: 4px solid #1a73e8;
+            transform: scale(1.3);
+            transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            /* opacity: 0; */
+        }
+
+        .button:hover:before,
+        .button:focus:before {
+            opacity: 0;
+            transform: scale(0.7);
+            transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .button:hover:after,
+        .button:focus:after {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+                transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+        }
+
+        .button-box {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .button-elem {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 17px 18px 0 18px;
+            transform: rotate(180deg);
+            fill: #1a73e8;
+        }
+
+        .button:hover .button-box,
+        .button:focus .button-box {
+            transition: 0.4s;
+            transform: translateX(-56px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="result.html">
+            <button class="button">
+                <div class="button-box">
+                    <span class="button-elem">
+                        <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="button-elem">
+                        <svg viewBox="0 0 46 40">
+                            <path
+                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+            </button>
+        </a>
+        <h1>Tips Mengelola Stres, Depresi, dan Kecemasan</h1>
+        <h2>Pengelolaan Stres</h2>
+        <ul>
+            <li>Kenali sumber stres: Identifikasi penyebab stres Anda, apakah karena pekerjaan, hubungan, atau faktor lain.</li>
+            <li>Olahraga teratur: Aktivitas fisik dapat mengurangi stres dan meningkatkan mood.</li>
+            <li>Tidur yang cukup: Pastikan Anda mendapatkan tidur yang cukup (7-8 jam) untuk mengurangi stres.</li>
+            <li>Makan seimbang: Konsumsi makanan yang seimbang dan bergizi untuk menjaga kesehatan mental.</li>
+            <li>Relaksasi: Lakukan teknik relaksasi seperti pernapasan dalam, meditasi, atau yoga.</li>
+        </ul>
+
+        <h2>Pengelolaan Depresi</h2>
+        <ul>
+            <li>Bicarakan perasaan: Bagikan perasaan Anda dengan orang yang dipercaya atau profesional.</li>
+            <li>Aktivitas yang menyenangkan: Lakukan kegiatan yang Anda sukai untuk meningkatkan mood.</li>
+            <li>Terapi: Pertimbangkan untuk melakukan terapi dengan psikolog atau psikiater.</li>
+            <li>Obat-obatan: Jika diperlukan, konsumsi obat-obatan yang diresepkan oleh dokter.</li>
+            <li>Dukungan sosial: Jaga hubungan dengan keluarga dan teman.</li>
+        </ul>
+
+        <h2>Pengelolaan Kecemasan</h2>
+        <ul>
+            <li>Kenali tanda-tanda: Identifikasi gejala kecemasan seperti jantung berdebar atau tangan gemetar.</li>
+            <li>Teknik pernapasan: Lakukan pernapasan dalam dan perlahan untuk menenangkan diri.</li>
+            <li>Pikiran positif: Fokus pada pikiran positif dan realistis.</li>
+            <li>Aktivitas fisik: Lakukan olahraga ringan untuk mengurangi kecemasan.</li>
+            <li>Pertimbangkan profesional: Jika kecemasan parah, pertimbangkan untuk berkonsultasi dengan psikolog atau psikiater.</li>
+        </ul>
+
+        <h2>Tips Tambahan</h2>
+        <ul>
+            <li>Jaga rutinitas: Pastikan Anda memiliki rutinitas yang seimbang dan terstruktur.</li>
+            <li>Hindari alkohol dan nikotin: Kedua zat ini dapat memperburuk gejala stres, depresi, dan kecemasan.</li>
+            <li>Makanan yang sehat: Konsumsi makanan yang kaya akan omega-3, vitamin D, dan magnesium untuk menjaga kesehatan mental.</li>
+            <li>Istirahat yang cukup: Pastikan Anda mendapatkan waktu istirahat yang cukup untuk mengurangi stres.</li>
+            <li>Pertimbangkan aplikasi kesehatan mental: Aplikasi seperti Calm, Headspace, atau Happify dapat membantu Anda mengelola stres dan kecemasan.</li>
+        </ul>
+
+        <h2>Sumber Bantuan</h2>
+        <ul>
+            <li>Klinik psikologi: Cari klinik psikologi terdekat untuk berkonsultasi dengan profesional.</li>
+            <li>Layanan kesehatan mental online: Kunjungi situs web seperti Kementerian Kesehatan RI atau Organisasi Kesehatan Dunia (WHO) untuk informasi dan sumber daya.</li>
+            <li>Grup dukungan: Cari grup dukungan untuk berbagi pengalaman dan mendapatkan dukungan dari orang lain.</li>
+        </ul>
+
+        <p class="source">
+            Sumber: <a href="https://www.alodokter.com">Alodokter</a>, <a href="https://rsjrw.id">RSJ RW</a>
+        </p>
+    </div>
+</body>
+</html>

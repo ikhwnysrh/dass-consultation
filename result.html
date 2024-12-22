@@ -204,6 +204,25 @@
             transition: 0.4s;
             transform: translateX(-56px);
         }
+        .button-container {
+            margin-top: 30px;
+            text-align: start;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #1a73e8;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-container button:hover {
+            background-color: #155cba;
+        }
     </style>
 </head>
 <body>
@@ -284,6 +303,12 @@
                 </tr>
             </tbody>
         </table>
+        <div class="button-container">
+            <p style="font-size: 16px; margin-bottom: 10px;">
+                Untuk informasi lebih lanjut dan langkah-langkah menjaga kesehatan mental Anda, silakan kunjungi halaman berikut:
+            </p>
+            <button onclick="goToTips()">Lihat Tips Kesehatan Mental</button>
+        </div>
     </div>
 
     <script>
@@ -377,6 +402,9 @@
             } else {
                 return `Kondisi Anda pada aspek ${type} tergolong sangat berat. Segera cari bantuan profesional untuk mendukung pemulihan Anda.`;
             }
+        };
+        const goToTips = () => {
+            window.location.href = "tips.html";
         };
     </script>
 
