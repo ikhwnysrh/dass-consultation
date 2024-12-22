@@ -71,6 +71,8 @@ section{
     }
 }
 .navbar{
+    display: flex;
+    justify-content: center;
     width: 90%;
     left:0;
     right:0;
