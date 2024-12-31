@@ -83,6 +83,11 @@ section{
     .navbar{
         display: flex;
         justify-content: center;
+        padding: 2rem 3rem 0rem 4rem;
+        
+    }
+    .baris-2{
+        font-size: 30px;
     }
 }
 #home{
